@@ -1,57 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>The Adhikari Family</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adhikari Family</title>
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-image: url('https://images.pexels.com/photos/18499072/pexels-photo-18499072/free-photo-of-qutub-shahi-tombs-building-behind-forest-trees.jpeg?auto=compress&cs=tinysrgb&w=1600');
+      background-size: cover;
+      height: 70px;
+    }
+
+    footer {
+      background-color: #1f2937;
+      color: #f3f4f6;
+      text-align: center;
+      padding: 30px 0;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#family-tree">Family Tree</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
 
-<section id="home" class="hero">
-    <div class="hero-content">
-        <h1>Welcome to the Adhikari Family Hub</h1>
-        <p>Celebrating Love, Unity, and Tradition</p>
-        <p class="hero-quote">Family is the compass that guides us; <br> a place where our journey begins.</p>
-
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-4 py-3 bg-gray-800 text-white">
+    <div>
+      <h1 class="text-xl font-bold">Adhikari Family</h1>
     </div>
-</section>
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="#about" class="hover:text-gray-300">About</a></li>
+        <li><a href="#events" class="hover:text-gray-300">Events</a></li>
+        <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- Main Content -->
+  <main class="container mx-auto py-8 px-4">
 
-    <section id="about">
-        <!-- Add your about us section content here -->
+    <!-- Jumbotron -->
+    <section id="about" class="text-center py-12">
+      <h2 class="text-4xl font-bold mb-4">Welcome to the Adhikari Family</h2>
+      <p class="text-lg text-gray-700">Discover our journey together!</p>
     </section>
 
-    <section id="family-tree">
-        <!-- Add your family tree section content here -->
+    <!-- About Section -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 py-12">
+      <div class="flex justify-center items-center">
+        <img src="https://images.pexels.com/photos/12552817/pexels-photo-12552817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Family Photo" class="rounded-lg shadow-lg">
+      </div>
+      <div class="text-left">
+        <h2 class="text-3xl font-bold mb-4">About Us</h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          We are a close-knit family bonded by love, respect, and shared values. Our journey is rooted within West Bengal, India, where our collective strength lies in our unity and traditions.
+
+With a deep appreciation for togetherness, we embrace each moment, cherishing our cultural heritage and creating lasting memories. Our family values kindness, resilience, and mutual support, nurturing an environment of understanding and growth.
+
+Through our shared experiences and diverse perspectives, we thrive on learning from one another, celebrating each individual's uniqueness, and standing together in times of joy and challenge.
+
+Join us as we continue our enriching journey, weaving stories of love, laughter, and togetherness in the tapestry of our lives.
+<br>
+Welcome to the Adhikari Family – where every moment is a cherished blessing.
+
+
+        </p>
+      </div>
     </section>
 
-    <section id="blog">
-        <!-- Add your blog section content here -->
+    <!-- Events Section -->
+    <section id="events" class="text-center py-12">
+      <h2 class="text-3xl font-bold mb-6">Upcoming Events</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Event Cards -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="https://images.pexels.com/photos/5559377/pexels-photo-5559377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Event 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Durgotsav, 2023</h3>
+            <p class="text-gray-700">
+Durgotsav, or Durga Puja, in 2023 marks a vibrant celebration of Goddess Durga's triumph over evil. It's a multi-day Hindu festival filled with colorful pandals, cultural events, prayers, and joyous gatherings. People adorn traditional attire, visit beautifully crafted idols of Goddess Durga, and immerse in the festive spirit of music, dance, and community feasts, symbolizing the victory of good over evil.  </p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="https://images.pexels.com/photos/12994378/pexels-photo-12994378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Event 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Kali Puja, 2023</h3>
+            <p class="text-gray-700">Kali Puja in 2023 will be a revered Hindu festival honoring Goddess Kali's power and strength. Through prayers, rituals, and offerings, devotees seek her blessings for protection and prosperity. The festival signifies the victory of good over evil and fosters spiritual devotion amidst vibrant cultural celebrations.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1619898383579-fb0a52a93947?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Event 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Deepawali, 2023</h3>
+            <p class="text-gray-700">
+Diwali, or Deepawali, in 2023 signifies light triumphing over darkness. Celebrated with colorful lights, sweets, and prayers, it's a joyous Hindu festival fostering togetherness, prosperity, and the victory of good over evil.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="events">
-        <!-- Add your events section content here -->
+    <!-- Contact Section -->
+    <section id="contact" class="text-center py-12">
+      <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+      <p class="text-lg text-gray-700 mb-8">Get in touch with us for any inquiries or collaborations.</p>
+      <form class="max-w-md mx-auto">
+        <div class="mb-4">
+          <input type="text" class="w-full px-4 py-2 rounded-md bg-gray-100 focus:outline-none focus:bg-white"
+            placeholder="Your Name">
+        </div>
+        <div class="mb-4">
+          <input type="email" class="w-full px-4 py-2 rounded-md bg-gray-100 focus:outline-none focus:bg-white"
+            placeholder="Your Email">
+        </div>
+        <div class="mb-6">
+          <textarea class="w-full px-4 py-2 rounded-md bg-gray-100 focus:outline-none focus:bg-white"
+            placeholder="Your Message" rows="4"></textarea>
+        </div>
+        For any inquiries or concerns, please feel free to reach out to us at <b><a href="mailto:tarun@theadhikari.in">tarun@theadhikari.in</a></b>. We will promptly attend to your message and respond with an appropriate and timely resolution. 
+        <br>
+        Thank you for your patience and understanding. 
+        <button type="submit"
+          class="w-full bg-gray-800 text-white py-2 rounded-md hover:bg-gray-700 transition duration-300">Submit</button>
+      </form>
     </section>
 
-    <section id="contact">
-        <!-- Add your contact us section content here -->
-    </section>
+  </main>
 
-    <footer>
-        <!-- Add your footer content here -->
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p class="text-center text-gray-300">&copy; 2018 <b>The Adhikari Family</b> - Developed by <b><a href="https://tarunadhikari.github.io">Tarun Adhikari</a></b> </p>
+  </footer>
+
 </body>
+
 </html>
